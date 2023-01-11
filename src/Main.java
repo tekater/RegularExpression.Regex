@@ -130,11 +130,10 @@ public class Main {
 
          */
         // \b
-        String regexBoundary = "\b";
-        String check = "abba";
+        String regexBoundary = "\\bcat\\b";
 
         System.out.println("regexBoundary: ");
-        System.out.println("aaaa" + " - " + " aaaa".matches(regexBoundary)); // странные недопонимания
+        System.out.println("cat" + " - " + "cat".matches(regexBoundary));
         System.out.println(" ");
         ////
 
@@ -143,11 +142,10 @@ public class Main {
         System.out.println("regexShort:");
         System.out.println(" a0 " + " - " + " a0 ".matches(regexShort));
         System.out.println(" 33 " + " - " + " 33 ".matches(regexShort));
+        System.out.println("t33t" + " - " + "\t33\t".matches(regexShort));
         System.out.println(" b9 " + " - " + " b9 ".matches(regexShort));
         System.out.println(" 0a " + " - " + " 0a ".matches(regexShort));
         System.out.println(" ");
         ////
-
-
     }
 }
