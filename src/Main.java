@@ -54,5 +54,14 @@ public class Main {
         System.out.println("11" + " - " + "11".matches(regexRep2));
         System.out.println("111" + " - " + "111".matches(regexRep2));
         System.out.println("1" + " - " + "1".matches(regexRep2));
+        System.out.println(" ");
+        ////
+
+        String regexRep3 = "ab{4,}";
+
+        System.out.println("regexRep3 :"); // {4,} число минимальных повторений (,) без ограничения;
+        System.out.println("abb" + " - " + "abb".matches(regexRep3));
+        System.out.println("abbbb" + " - " + "abbbb".matches(regexRep3));
+        System.out.println("abbbbbbbb" + " - " + "abbbbbbbb".matches(regexRep3));
     }
 }
