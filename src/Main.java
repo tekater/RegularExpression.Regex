@@ -9,7 +9,5 @@ public class Main {
         System.out.println("Java8 - " + "Java8".matches(regex2));
         System.out.println("J9 - " + "J9".matches(regex2));
         System.out.println("v8 - " + "v8".matches(regex2));
-        ////
-
     }
 }
