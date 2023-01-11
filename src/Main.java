@@ -117,6 +117,37 @@ public class Main {
         System.out.println("extra" + " - " + "00000000-9999-4aaa-9fff-0123456789ff".matches(regular));
         System.out.println(" ");
         ////
+        // Сокращения в регулярных выражениях
+        /*
+        \d - любое число [0-9]
+        \s - пробелы [\t \n \x0B \f \r];
+        \w - буквенно-числовые символы [a-zA-Z_0-9]
+        \b - граница. \ba
+        \D не цифра == [^0-9]
+        \S не пробел == [^ \t \n \x0B \f \r];
+        \W не буквенно-числовой символ [^a-zA-z_0-9]
+        \B не граница слова.
+
+         */
+        // \b
+        String regexBoundary = "\b";
+        String check = "abba";
+
+        System.out.println("regexBoundary: ");
+        System.out.println("aaaa" + " - " + " aaaa".matches(regexBoundary)); // странные недопонимания
+        System.out.println(" ");
+        ////
+
+        String regexShort = "\\s\\w\\d\\s";
+
+        System.out.println("regexShort:");
+        System.out.println(" a0 " + " - " + " a0 ".matches(regexShort));
+        System.out.println(" 33 " + " - " + " 33 ".matches(regexShort));
+        System.out.println(" b9 " + " - " + " b9 ".matches(regexShort));
+        System.out.println(" 0a " + " - " + " 0a ".matches(regexShort));
+        System.out.println(" ");
+        ////
+
 
     }
 }
