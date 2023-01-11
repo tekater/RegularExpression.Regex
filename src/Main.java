@@ -114,8 +114,9 @@ public class Main {
         System.out.println("3" + " - " + "f087d9fc-xyz3-4a3f-93e0-bdb8d9b68268".matches(regular));
         System.out.println("4" + " - " + "92ae7a-94f-40c-a22-de4b42dd13".matches(regular));
         System.out.println("5" + " - " + "f66024c3_50f8_442e_9387_28746581f472".matches(regular));
+        System.out.println("extra" + " - " + "00000000-9999-4aaa-9fff-0123456789ff".matches(regular));
         System.out.println(" ");
         ////
-        
+
     }
 }
