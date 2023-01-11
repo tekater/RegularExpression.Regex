@@ -130,7 +130,7 @@ public class Main {
 
          */
         // \b
-        String regexBoundary = "\\bcat\\b";
+        String regexBoundary = "\\bcat";
 
         System.out.println("regexBoundary: ");
         System.out.println("cat" + " - " + "cat".matches(regexBoundary));
