@@ -5,7 +5,7 @@ public class Main {
         System.out.println("ale" + " - " + "ale".matches(regex));
         System.out.println(" ");
         ////
-        String regex1 ="[Java][7-9]";
+        String regex1 = "[Java][7-9]";
 
         System.out.println("Java :");
         System.out.println("j7" + " - " + "j7".matches(regex1));
@@ -14,7 +14,7 @@ public class Main {
         System.out.println("v8" + " - " + "v8".matches(regex1));
         System.out.println(" ");
         ////
-        String regex0 ="[Java]{4}[7-9]";
+        String regex0 = "[Java]{4}[7-9]";
 
         System.out.println("Java + захват {4} :");
         System.out.println("j7" + " - " + "j7".matches(regex0));
@@ -63,5 +63,46 @@ public class Main {
         System.out.println("abb" + " - " + "abb".matches(regexRep3));
         System.out.println("abbbb" + " - " + "abbbb".matches(regexRep3));
         System.out.println("abbbbbbbb" + " - " + "abbbbbbbb".matches(regexRep3));
+        System.out.println(" ");
+        ////
+
+        String regexRep4 = "ab+a";
+
+        System.out.println("regexRep4 : ");
+        System.out.println("aa" + " - " + "aa".matches(regexRep4));
+        System.out.println("aba" + " - " + "aba".matches(regexRep4));
+        System.out.println("abbba" + " - " + "abbba".matches(regexRep4));
+        System.out.println("abbbbba" + " - " + "abbbbba".matches(regexRep4));
+        System.out.println(" ");
+        ////
+
+        String regexRep5 = "ab*a";
+
+        System.out.println("regexRep5 : ");
+        System.out.println("aa" + " - " + "aa".matches(regexRep5));
+        System.out.println("aba" + " - " + "aba".matches(regexRep5));
+        System.out.println("abbba" + " - " + "abbba".matches(regexRep5));
+        System.out.println("abbbbba" + " - " + "abbbbba".matches(regexRep5));
+        System.out.println(" ");
+        ////
+
+        String regexRep6 = "ab{0,3}a";
+
+        System.out.println("regexRep6 : ");
+        System.out.println("aa" + " - " + "aa".matches(regexRep6));
+        System.out.println("aba" + " - " + "aba".matches(regexRep6));
+        System.out.println("abbba" + " - " + "abbba".matches(regexRep6));
+        System.out.println("abbbbba" + " - " + "abbbbba".matches(regexRep6));
+        System.out.println(" ");
+        ////
+
+        String regexRep7 = "ab{3,}a";
+
+        System.out.println("regexRep7 : ");
+        System.out.println("aa" + " - " + "aa".matches(regexRep7));
+        System.out.println("aba" + " - " + "aba".matches(regexRep7));
+        System.out.println("abbba" + " - " + "abbba".matches(regexRep7));
+        System.out.println("abbbbba" + " - " + "abbbbba".matches(regexRep7));
+        System.out.println(" ");
     }
 }
